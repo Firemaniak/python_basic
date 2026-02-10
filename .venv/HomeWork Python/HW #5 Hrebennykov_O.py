@@ -249,13 +249,3 @@ y = 0 or None
 print(y)
 
 c = Decimal(str(0.1))
-
-
-
-
-
-
-
-
-
-
