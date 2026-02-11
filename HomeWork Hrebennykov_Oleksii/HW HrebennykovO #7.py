@@ -5,17 +5,17 @@
 # Введите число: 12345
 # Сумма цифр: 15
 
-# number = int(input("Enter a number: "))
-#
-# number = abs(number)
-#
-# suma = 0
-#
-# while number > 0:
-#     digit = number % 10
-#     suma += digit
-#     number = number // 10
-# print(suma)
+number = int(input("Enter a number: "))
+
+number = abs(number)
+
+suma = 0
+
+while number > 0:
+    digit = number % 10
+    suma += digit
+    number = number // 10
+print(suma)
 
 # Task #2
 # Палиндром
@@ -27,20 +27,20 @@
 # Введите число: 1234
 # Число 1234 не является палиндромом.
 
-# number = int(input("Enter a number: "))
-#
-# original = number
-# temp = original
-# revers_number = 0
-#
-# while temp > 0:
-#     digit = temp % 10
-#     revers_number = revers_number * 10 + digit
-#     temp //= 10
-# if revers_number != original:
-#     print(f"Число {number} не является палиндромом")
-# else:
-#     print(f"Число {number} является палиндромом")
+number = int(input("Enter a number: "))
+
+original = number
+temp = original
+revers_number = 0
+
+while temp > 0:
+    digit = temp % 10
+    revers_number = revers_number * 10 + digit
+    temp //= 10
+if revers_number != original:
+    print(f"Число {number} не является палиндромом")
+else:
+    print(f"Число {number} является палиндромом")
 
 #Task #3
 # Проверь интуицию
