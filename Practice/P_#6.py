@@ -14,24 +14,24 @@
 # equal: False
 # not equal: True
 
-first = input("Enter first value (True/False): ")
-second = input("Enter second value (True/False): ")
+# first = input("Enter first value (True/False): ")
+# second = input("Enter second value (True/False): ")
+#
+# if first == "True":
+#     a = True
+# else:
+#     a = False
+#
+# if second == "True":
+#     b = True
+# else:
+#     b = False
 
-if first == "True":
-    a = True
-else:
-    a = False
-
-if second == "True":
-    b = True
-else:
-    b = False
-
-print("and:", a and b)
-print("or:", a or b)
-print("not:", not a)
-print("equal:", a == b)
-print("not equal:", a != b)
+# print("and:", a and b)
+# print("or:", a or b)
+# print("not:", not a)
+# print("equal:", a == b)
+# print("not equal:", a != b)
 
 #task #2
 # Проверка условий
@@ -45,14 +45,14 @@ print("not equal:", a != b)
 # Оба условия выполнены? False
 # Хотя бы одно условие выполнено? True
 
-light_input = input("Свет включён? (True/False): ")
-window_input = input("Окно открыто? (True/False): ")
-
-light = light_input == "True"
-window = window_input == "True"
-
-print("Оба условия выполнены?", light and window)
-print("Хотя бы одно условие выполнено?", light or window)
+# light_input = input("Свет включён? (True/False): ")
+# window_input = input("Окно открыто? (True/False): ")
+#
+# light = light_input == "True"
+# window = window_input == "True"
+#
+# print("Оба условия выполнены?", light and window)
+# print("Хотя бы одно условие выполнено?", light or window)
 
 # task #3
 #  Стоимость мобильного тарифа
@@ -64,12 +64,153 @@ print("Хотя бы одно условие выполнено?", light or wind
 # Введите использованные мегабайты: 510
 # Общая стоимость: 32.0
 
-mg = int(input("Введиие использованные мегабайты: "))
+# mg = int(input("Введиие использованные мегабайты: "))
+#
+# if mg <= 500:
+#     print('Общая стоимость: 30 евро')
+# else:
+#     print('Общая стоимость:', ((mg - 500) * 0.2) + 30 , 'евро')
 
-if mg <= 500:
-    print('Общая стоимость: 30 евро')
-else:
-    print('Общая стоимость:', ((mg - 500) * 0.2) + 30 , 'евро')
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Таблица товаров
+# Напишите программу, которая выводит каждый продукт из списка на отдельной
+# строке, не используя циклы. Подумайте как сделать это не дублируя код.
+#
+# Данные:
+# Python
+# products = ["Молоко", "Хлеб", "Сахар-песок", "Подсолнечное масло", "Шоколадный
+# батончик", "Мороженое"]
+#
+# Пример вывода:
+# Python
+# Молоко
+# Хлеб
+# Сахар-песок
+# Подсолнечное масло
+# Шоколадный батончик
+# Мороженое
+
+
+# products = ["Молоко", "Хлеб", "Сахар-песок", "Подсолнечное масло", "Шоколадный батончик", "Мороженое"]
+# print(*products, sep="\n")
+
+#Task#2
+# Фильтрация по количеству:
+# Напишите программу, которая фильтрует список кортежей, оставляя только те, где
+# количество больше 10. Выведите данные согласно примеру.
+#
+# data = [("апельсин", 5), ("вишня", 12), ("киви", 18), ("ананас", 7), ("яблоко",20)]
+# print('Отфильтрованные данные:')
+# for fruct, q_ty in data:
+#
+#     if q_ty > 10:
+#         print(f'Товар : {fruct:<10} | Цена: {q_ty:.2f} ')
+
+# Товары со скидкой
+# Напишите программу, которая выводит таблицу с названием товара, его ценой,
+# размером скидки (запрашивается у пользователя), и итоговой ценой с округлением
+# до двух знаков после запятой. Таблица должна соответствовать форматированию
+# ниже.
+#
+# Данные:
+
+
+# products = [
+# ("Кофе", 127.99),
+# ("Чай", 52.49),
+# ("Шоколад", 81.99)
+# ]
+#
+# sale = 17
+# title = "Название        |       Цена |     Скидка |   Итоговая цена"
+# print(title)
+# print(len(title) * '-')
+#
+# for item in products:
+#     price_1 = item[1] - item[1] * sale / 100
+#     print(f'{item[0]:15} | {item[1]:10.2f} | {sale:9}% | {price_1:>15.2f}')
+
+
+#Task4
+#
+# Таблица покупок
+
+# Напишите программу, которая обрабатывает список кортежей, где каждый кортеж
+# содержит информацию о товаре: название, цена и количество.
+# Выведите данные в формате таблицы, выровняв название по левому краю, а цену и
+# количество — по правому.
+# Учитывайте, что названия могут быть длинными. Выстраивайте выравнивание
+# таблицы динамически, исходя их самого длинного названия товара.
+# Данные:
+# Python
+products = [
+("Молоко", 3000000000, 10000),
+("Хлеб", 1, 5),
+("Сахар-песок", 2, 15),
+("Подсолнечное масло", 5, 3),
+("Шоколадный батончик", 4, 20),
+("Мороженое", 3, 20)
+]
+
+# print(len(title) * '-')
+# max_len = len(max(products, key=len))
+# print(max_len)
+lenth_1 = len(products[0])
+lenth_2 = 0
+lenth_3 = 0
+
+for product, price, q_ty in products:
+    if len(product) > lenth_1:
+        lenth_1 = len(product)
+    if len(str(price)) > lenth_2:
+        lenth_2 = len(str(price))
+        print(lenth_2)
+    if len(str(q_ty)) > lenth_3:
+        lenth_3 = len(str(q_ty))
+title = f"| Название {(lenth_1 - 4) * ' '}|{(lenth_2) * ' '}Цена |{(lenth_3) * ' '}Количество |"
+print(title)
+print(len(title) * '-')
+for item in products:
+    print(f'| {item[0]:{(lenth_1 + 4)}} | {item[1]:{(lenth_2 + 3)}} | {item[2]:{(lenth_3 + 9)}} |')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
