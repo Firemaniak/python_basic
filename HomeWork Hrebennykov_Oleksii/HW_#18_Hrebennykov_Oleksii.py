@@ -7,6 +7,21 @@
 # Пример вывода:
 # Числа, встречающиеся более одного раза: [7, 4, 3, 8]
 
-numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
+# numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
+#
+# for item in numbers:
 
-for item in numbers:
+
+
+
+
+
+
+
+
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+cities = ['Hamburg', 'Berlin', 'Munich']
+combined = zip(names, ages, cities)
+#print(combined)
+print(list(combined))
