@@ -1,0 +1,6 @@
+INFO: System started
+INFO: User login successful
+ERROR: Database connection failed
+WARNING: Low disk space
+ERROR: Invalid password
+INFO: Backup completed
