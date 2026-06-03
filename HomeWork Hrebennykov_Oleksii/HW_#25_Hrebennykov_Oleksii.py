@@ -7,20 +7,33 @@
 # Введите делитель: 5a
 # Ошибка: Введено некорректное число.
 
-def division_num():
-    try:
-        a = float(input("Введите делимое: "))
-        b = float(input("Введите делитель: "))
-        return a / b
+def division_num(a: float, b: float) -> float:
 
-    except ValueError:
-        return ("Ошибка: Введено некорректноое число.")
-    except ZeroDivisionError:
-        return("Ошибка: Деление на ноль невозможно.")
-    else:
-        return (f"Результат: {result}")
+    """
+    Divides two numbers and returns the result.
 
-print(division_num())
+    :param a: Dividend.
+    :param b: Divisor.
+    :return: Division result.
+    """
+
+    return a / b
+
+
+try:
+    dividend = float(input("Введите делимое: "))
+    divisor = float(input("Введите делитель: "))
+
+    result = division_num(dividend, divisor)
+
+except ValueError:
+    print("Ошибка: Введено некорректное число.")
+
+except ZeroDivisionError:
+    print("Ошибка: Деление на ноль невозможно.")
+
+else:
+    print(f"Результат: {result}")
 
 #------------------------------------------------Task_#2----------------------------------------------------------------
 #-------------------------------------------Логирование ошибок----------------------------------------------------------
@@ -50,4 +63,4 @@ def division_num():
 
 division_num()
 
-------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------
