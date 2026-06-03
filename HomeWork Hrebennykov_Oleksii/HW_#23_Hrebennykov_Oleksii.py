@@ -12,19 +12,18 @@
 data = [42, "hello", [1, 2, 3], {"a": 1, "b": 2}]
 
 from typing import Any
-def join_str(data: list(Any)) -> str:
-    """
-    Принимает список данных любого типа и возвращает строку,
-    где элементы объединены через " | ".
 
-    :param data: Список элементов(любых типов).
-    :return: Строка с объединёнными элементами.
+
+def join_str(data: list[Any]) -> str:
+    """
+    Takes a list of values of any type and returns
+    their string representation joined by " | ".
+
+    :param data: List of values.
+    :return: Joined string.
     """
 
-    result = []
-    for item in data:
-        result.append(str(item))
-    return " | ".join(result)
+    return " | ".join(map(str, data))
 
 print(join_str(data))
 
