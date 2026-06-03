@@ -8,14 +8,16 @@
 # Число 17 является простым
 
 n = 17
-def simple_num (n):
+
+def simple_num(n):
     if n < 2:
         return False
+
     for i in range(2, n):
-        if n / i == 0:
+        if n % i == 0:
             return False
-        else:
-            return True
+
+    return True
 
 if simple_num(n):
     print(f"Число {n} является простым")
@@ -87,3 +89,4 @@ def merge_dicts(*dicts):
     return result
 print(merge_dicts(dict1,dict2,dict3))
 
+#-----------------------------------------------------------------------------------------------------------------------
