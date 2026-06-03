@@ -11,16 +11,15 @@
 
 text_list = ["Hello", "Python Programming", "World", "Advanced Topics", "Simple"]
 
+result = []
+
 for i in range(len(text_list)):
-    if " " in text_list[i]:
-        text_list[i] = None
-    else:
-        text_list[i] = text_list[i].lower()
+    if " " not in text_list[i]:
+        result.append(text_list[i].lower())
 
-while None in text_list:
-    text_list.remove(None)
+print(result)
 
-print(text_list)
+#-----------------------------------------------------------------------------------------------------------------------
 
 #Task #2
 # Обновление цен товаров
@@ -51,6 +50,8 @@ print(f'{'Товар'}{'Старая цена':>20}{'Новая цена':>14}')
 for item in products:
     new_price = item[1] - (item[1] * (sale / 100))
     print(f'{item[0]} {item[1]:>17.2f}$ {new_price:>10.2f}$')
+
+#-----------------------------------------------------------------------------------------------------------------------
 
 
 
